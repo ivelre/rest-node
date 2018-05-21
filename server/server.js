@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
 app.get('/usuario',function(req,res){
-	res.send('Hello word get')
+	res.send({User:'Er Levi',lastName:'Medina Rodríguez'})
 })
 app.post('/usuario',function(req,res){
 	let body = req.body
